@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* CSS Document */
+#bottombar {
+		position:absolute;
+		float:right;
+		width:100%;
+		border:1px solid #999;
+		background-color:#345;
+		color:#ccc;
+		padding:5px 5px 5px 25px;
+		text-align:center;
+        bottom:5px;
+		}
+#bottombar a{
+	color:#FFF;
+	
+}
+#links {
+font-size:36px;	
+	
+}

@@ -1,0 +1,72 @@
+#body .content { width:960px; }
+
+.form_container { }
+.form_container .form_content { float:left; width:270px; }
+.form_container .form_box { float:right; padding-left:30px; }
+.form_container .form_box h3 { width:600px; }
+
+.error_text .title_col { color:#F00; }
+h3.error_text {
+	color:#F00;
+}
+label.error_text {
+	color:#F00;
+}
+
+
+.form_layout {
+	float:right; 
+	background:url(../images/forms/form-container-background.gif) top left repeat-y!important; 
+	margin:0;
+	padding:15px 20px 18px 20px; 
+	color: #fff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position:relative;
+	font-size:11px;
+}
+
+.form_layout p { font-weight:bold; }
+
+.form_layout textarea { width:608px; border:1px solid #818181; height:150px; }
+
+h3 { background:#e3e3e4; padding:10px; margin-top:7px; margin-bottom:18px; display:block; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#818181; }
+label { color:#818181; font-weight:bold; margin-right:25px; }
+
+.four_column {}
+
+.row { padding-bottom:15px; }
+.row.two_column_small .column { width:auto; }
+.column { float:left; width:100px; }
+.column.full_size_input { width:400px; }
+.column.full_size_input .dots { margin-left:-5px; font-weight:bold; color:#818181; margin-right:1px; }
+.column.full_size_input select { margin-right:5px; }
+
+.column.title_col { padding-top:2px; font-weight:bold; display:block; width:180px!important; text-align:left; }
+.four_column .column.title_col { padding-top:0; }
+.column.top_title_col { font-weight:bold; }
+
+input { font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#818181; }
+textarea { font-size:11px; font-family:Arial, Helvetica, sans-serif; color:#818181; border:1px solid #818181; padding:5px; margin-bottom:12px; resize: none }
+.centered_inputs { text-align:center; }
+
+input.catcha_input, .input_details input, .cb_group input.checkbox_details { width:288px; border:1px solid #818181; padding:5px;  }
+
+.no_padding input { margin-top:3px }
+
+input.catcha_input { width:209px; }
+
+.input_details .row { padding-bottom:20px; }
+.input_details .column.title_col { padding-top:3px; }
+
+.captcha_image { margin-bottom:15px;}
+
+input.submit_button { text-indent:-9999px; position:relative; margin-top:25px;  border:0; background:url(../images/buttons/submit.png) top left no-repeat; width:144px; height:28px; display:block; cursor:pointer; }
+
+/* Sponsorship styles */
+
+.cb_group { width:440px; }
+.cb_group label { cursor:pointer; margin-left:3px; }
+.cb_group label span { font-weight:normal; }
+.checkbox_details { display:block; margin:5px 0 15px 0; }

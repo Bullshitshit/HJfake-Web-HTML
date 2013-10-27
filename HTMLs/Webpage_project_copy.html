@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="mainstyle.css" />
+<link type="text/css" rel="stylesheet" href="Navi.css" />
+<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="Sliding_tab.css" />
+		<link rel="stylesheet" type="text/css" href="style2.css" />
+		<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css' />
+<script language="javascript" src="jquery.js"></script>
+<script language="javascript" src="jquery.dimensions.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script language="javascript">
+	var name = "#floatMess";
+	var menuYloc = null;	
+	
+		$(document).ready(function(){
+	menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")))
+			$(window).scroll(function () { 
+				offset = menuYloc+$(document).scrollTop()+"px";
+				$(name).animate({bottom:offset},{duration:500,queue:false});
+			});
+ 
+			$('#close_message').click(function()
+			{
+  			$(name).animate({ bottom:"-=15px",opacity:0 }, "slow");
+			});
+		}); 
+		
+ 
+  $(function() {
+    $( document ).tooltip({
+      track: true
+    });
+  });
+	 </script>
+<script type="text/javascript">
+
+window.onload = function(){
+var separator = " - ";
+var dateTime = new Date();
+var formattedDateTime = "The last update time was "+dateTime.toLocaleDateString() + separator + dateTime.toLocaleTimeString();
+var divObject = document.getElementById("floatMess");
+divObject.innerHTML = formattedDateTime;
+
+
+
+}
+window.onunload=function(){
+	
+	window.location.href = ('Webpage_project.html');
+	
+	$(title).animate({color:"#000",background:"#FFF"},"slow");
+
+}
+
+</script>
+
+<script type="text/javascript">
+function show(){
+	
+	if($('.codrops-top').length > 0){
+          var parent = document.getElementByTagName('body');
+		  var x = document.getElementsByClassName('codrops-top');
+          parent.removeChild(x);
+	}else{
+	var div = document.createElement('div');
+	div.className = ('codrops-top');
+	
+	var innerDiv = document.createElement('a');
+	innerDiv.setAttribute('href','Webpage_project.html');
+	innerDiv.textContent = ('return to home page');
+	
+	div.appendChild(innerDiv);
+	document.getElementsByTagName('body')[0].appendChild(div);
+	
+	var menu = document.getElementById('cssmenu');
+	$(menu).animate({ top:"-=50px",opacity:0 }, "slow");
+	
+	var first = document.getElementById('home');
+	$(first).animate({ top:"-=20px",opacity:0 }, "slow");
+	
+	var logo = document.getElementById('apDiv1');
+	$(logo).animate({ top:"-=20px",opacity:0 }, "slow");
+	
+	var title = document.getElementById('aboutus');
+	$(title).animate({color:"#000",background:"#FFF"},"slow");
+	
+	$('body').removeClass('panel');
+	}
+
+}
+</script>
+<title>Hungry Jackies</title>
+
+<style type="text/css">
+. label {
+    display: inline-block; width: 5em;
+  }
+  fieldset div {
+    margin-bottom: 2em;
+  }
+  fieldset .help {
+    display: inline-block;
+  }
+  .ui-tooltip {
+    width: 300px;
+	font-size:24px;
+  }
+body {
+	background-image: url(1680x1050_PremiumChoices.jpg);
+	
+}
+.loaded {
+   opacity : 1;
+}
+
+
+#apDiv1 {
+	position: absolute;
+	width: 124px;
+	height: 126px;
+	z-index: 2001;
+	left: 328px;
+	top: 94px;
+}
+
+</style>
+<script>
+window.setTimeout("kill()", 8000);
+function kill(){
+	$(name).animate({ bottom:"-=15px",opacity:0 }, "slow");
+}
+</script>
+
+</head>
+
+<body>
+<div id='cssmenu' style="margin-left:34%;margin-top:10px" >
+  <ul>
+  <li class='active'><a href='Webpage_project.html'><span>Home</span></a></li>
+   <li><a href='Foodshow.html'><span>Gallery</span></a></li>
+   <li><a href='Webpage_tablepage.html'><span>Food list</span></a></li>
+   <li class='last'><a href='Contact.html'><span>Contact</span></a></li>
+</ul>
+</div>
+<div id="floatMess">
+<img id="close_message" style="float:right;cursor:pointer"  src="cross.png" />
+</div>
+
+<!--<div class="codrops-top">
+			<a href="Webpage_project.html">
+				<strong>Return to home page</strong>
+			</a>
+			<div class="clr"></div>
+		</div>-->
+        
+<div id="home" class="content">
+
+<h2>Hungry Jackies</h2>
+<p>About us?I don't really want to talk much here since i am not the owner of this business.<br /> For more info please visit:<a href="http://www.hungryjacks.com.au" target:"_blank">Hungry Jacks Official Website</a></p>
+ <iframe width="770" height="440" src="http://www.youtube.com/embed/8YkreW5P6Lg" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<div id="location" class="panel">
+<div class="content">
+<h2>Location</h2>
+<iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=hungry+jacks&amp;aq=&amp;sll=-37.827091,144.970242&amp;sspn=0.104404,0.181789&amp;ie=UTF8&amp;hq=hungry+jacks&amp;hnear=&amp;t=m&amp;ll=-37.811276,144.955502&amp;spn=0.047466,0.072956&amp;z=13&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.au/maps?f=q&amp;source=embed&amp;hl=zh-CN&amp;geocode=&amp;q=hungry+jacks&amp;aq=&amp;sll=-37.827091,144.970242&amp;sspn=0.104404,0.181789&amp;ie=UTF8&amp;hq=hungry+jacks&amp;hnear=&amp;t=m&amp;ll=-37.811276,144.955502&amp;spn=0.047466,0.072956&amp;z=13"  style="color:#0000FF;text-align:left" target="_blank">Check out in Google map website</a></small>
+</div>
+</div>
+
+<div id="intro" class="panel">
+<div class="content">
+
+<h2>Services</h2>
+<p>We are providing the best food experience in Australia.</p>
+<br /><br /><br />
+<ul><li><p>With the free mobile app, customers can check in every 10 hours and get free food from us (Official one)</p></li><br />
+<li><p>With the new third party HJ fake pro app, customers can check in anytime for NO limitation</p></li></ul>
+</div>
+</div>
+
+<div id="mobile" class="panel">
+<div class="content">
+<h2>Mobile apps</h2>
+<br /><br /><br />
+<a id='official'href="https://itunes.apple.com/au/app/hungry-jacks-makes-it-better/id518981155?mt=8" target="_blank" title="Tap the icon to download app from Apple App store."><img src="hungry-jacks-makes-it-better.png" alt="Download official app for iPhone"  class="apps"/></a>
+<p>Download official app for experience</p><a id="fake" href="https://www.dropbox.com/s/qv6blfd0bq9kimk/HJFake%20Released.ipa" target="_blank" title="Tap this icon to donwload app from my dropbox.&#013; You can download this app and then install to your jailbroken iPhone&#013; using iTools(Non-jailbroken version coming soon as i got my certificate...)"><img src="hungry-jackies.png" alt="Download the ultimate fake app for iPhone!" class="apps"/></a><p>Download fake app for unlimited usage!<br />(Jailbreak or certificate required)</p>
+</div>
+</div>
+<div id="header" style="margin-top:50px">
+  <h1 id="aboutus"><a href="Webpage_project.html">About us</a></h1>
+			<ul id="navigation">
+				<li><a id="link-location" href="#location" onclick="show()">Location</a></li>
+				<li><a id="link-intro" href="#intro" onclick="show()">services</a></li><br />
+				<li><a id="link-mobile" href="#mobile" onclick="show()">Mobile app</a></li>
+			</ul>
+			
+</div>
+<div id="apDiv1">
+<img src="hungry-jackies.png" alt="Hungry Jackies" /></div>
+
+
+</body>
+</html>
